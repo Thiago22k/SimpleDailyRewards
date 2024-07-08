@@ -1,0 +1,32 @@
+name: SimpleDailyRewards
+version: '${project.version}'
+main: sdr.breeze.simpledailyrewards.SimpleDailyRewards
+api-version: '1.21'
+commands:
+  sdr:
+    description: Main command for SimpleDailyRewards
+    usage: /sdr <on|off|reload|reset>
+    aliases: []
+  deliverdailyreward:
+    description: Deliver the reward to the player
+    usage: /deliverdailyreward
+    aliases:
+      - ddr
+      - reward
+    permission: sdr.deliver
+
+permissions:
+  sdr.reload:
+    description: Allow reloading the plugin configuration
+    default: op
+  sdr.toggle:
+    description: Allow enabling or disabling the reward system
+    default: op
+  sdr.deliver:
+    description: Allow players to receive their reward
+    default: true
+  sdr.reset:
+    description: Allow resetting the reward time of connected players
+    default: op
+  sdr.time:
+    description: Allow change the reward time interval

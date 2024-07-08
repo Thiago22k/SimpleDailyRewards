@@ -1,0 +1,22 @@
+# Enable or disable the plugin
+enabled: true
+# Time in seconds (86400= 24 hours / 3600= 1 hour / 300= 5 minutes)
+rewardInterval: 86400
+# Message when executing 'deliverdailyreward' command without having met the reward time
+noRewardMessage: '&cYou have no rewards at the moment!'
+disabledRewardMessage: '&cThe reward system is currently disabled.'
+inventoryFullMessage: "&cYou don't have enough space in your inventory to receive the reward!"
+modes:
+  command:
+    enabled: true
+    commandToExecute: 'give %player% minecraft:emerald 1'
+    message: '&aYou have received an emerald!'
+  xp:
+    enabled: true
+    amount: 100
+    message: '&aYou have received 100 experience points!'
+  item:
+    enabled: false
+    itemId: 'diamond'
+    amount: 1
+    message: '&aYou have received an diamond!'
