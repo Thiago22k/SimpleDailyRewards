@@ -21,7 +21,7 @@ SimpleDailyRewards is a Minecraft plugin developed using Spigot. It provides a d
 
 ## Permissions
 
-- `sdr.time`: Allow usage of all SimpleDailyRewards commands (Deprecated).
+- `sdr.time`: Allow changing the reward time interval time.
 - `sdr.reload`: Allow reloading the plugin configuration.
 - `sdr.toggle`: Allow enabling or disabling the reward system.
 - `sdr.deliver`: Allow players to receive their reward.
